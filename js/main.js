@@ -129,7 +129,23 @@
         })
     });
 
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".toggle-btn").forEach(function(btn) {
+            btn.addEventListener("click", function(e) {
+                e.preventDefault();
 
+                let moreText = this.previousElementSibling;
+
+                if (moreText.classList.contains("d-none")) {
+                    moreText.classList.remove("d-none");
+                    this.innerText = " Show less";
+                } else {
+                    moreText.classList.add("d-none");
+                    this.innerText = " Show more";
+                }
+            });
+        });
+    });
 
     // Product Quantity
     $('.quantity button').on('click', function () {
