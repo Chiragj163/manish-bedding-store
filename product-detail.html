@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Product Details - Manish Bedding Store</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <a href="https://wa.me/919038788320" class="btn btn-success position-fixed" style="bottom:20px; left:20px; z-index:999; border-radius:50%; width:60px; height:60px; display:flex; align-items:center; justify-content:center;">
+        <i class="fab fa-whatsapp fa-2x"></i>
+    </a>
+
+    <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <div class="container-fluid fixed-top">
+        <div class="container topbar bg-primary d-none d-lg-block">
+            <div class="d-flex justify-content-between">
+                <div class="top-info ps-2">
+                    <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">99/19,Jessore road Satgachi Nagerbazar Kolkata</a></small>
+                    <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">manish.beddings@gmail.com</a></small>
+                    <small class="me-3"><i class="fas fa-phone-alt me-2 text-secondary"></i><a href="#" class="text-white">+91 9038788320</a></small>
+                </div>
+            </div>
+        </div>
+        <div class="container px-0">
+            <nav class="navbar navbar-light bg-white navbar-expand-xl">
+                <a href="index.html" class="navbar-brand"><h1 class="text-primary fw-bold">Manish Bedding Store</h1></a>
+                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-primary"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid page-header py-5" style="background: var(--bs-primary); margin-top: 130px;">
+        <h1 class="text-center text-white display-6">Product Details</h1>
+    </div>
+    <div class="container-fluid py-5 mt-5">
+        <div class="container py-5">
+            <div class="row g-4 mb-5">
+                
+                <div class="col-lg-6">
+                    <div class="border rounded shadow-sm">
+                        <a href="#">
+                            <img id="main-image" src="" class="img-fluid rounded w-100" alt="Product Image">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h4 class="fw-bold mb-3" id="product-title" style="font-size: 2.5rem;">Loading...</h4>
+                    <p class="mb-3 text-secondary">Category: <span id="product-category" class="text-dark fw-bold">...</span></p>
+                    <h5 class="fw-bold mb-3 text-primary" id="product-price"></h5>
+                    
+                    <p class="mb-4" id="product-desc"></p>
+                    
+                    <h5 class="fw-bold mb-3">Features:</h5>
+                    <ul class="list-unstyled mb-4" id="product-features">
+                        </ul>
+
+                    <a id="whatsapp-btn" href="#" target="_blank" class="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary d-inline-flex align-items-center gap-2">
+                        <i class="fab fa-whatsapp fa-lg text-success"></i> Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <div id="suggestions-section" style="display: none;">
+                <h1 class="fw-bold mb-4 mt-5">Related Products</h1>
+                <div class="row g-4" id="suggestions-container">
+                    </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+        <div class="container py-5">
+            <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+                <div class="row g-4">
+                    <div class="col-lg-9">
+                        <a href="index.html">
+                            <h1 class="text-primary mb-0">Manish bedding stores</h1>
+                            <p class="text-secondary mb-0">Fresh Collection</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="d-flex justify-content-end pt-3">
+                            <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-5 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="text-light mb-3">Why People Like us!</h4>
+                        <p class="mb-4">We provide high-quality bedding products at affordable prices in Kolkata. Visit our store or order via WhatsApp.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex flex-column text-start footer-item">
+                        <h4 class="text-light mb-3">Shop Info</h4>
+                        <a class="btn-link" href="">About Us</a>
+                        <a class="btn-link" href="">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="text-light mb-3">Contact</h4>
+                        <p>Address: 99/19,Jessore road Satgachi Nagerbazar Kolkata</p>
+                        <p>Email: manish.beddings@gmail.com</p>
+                        <p>Phone: +91 9038788320</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid copyright bg-dark py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Manish bedding stores</a>, All right reserved.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script>
+    // Get product ID from URL
+    const params = new URLSearchParams(window.location.search);
+    const productId = params.get("id") || "sleepwell-classic"; 
+
+    // Database with exact products from your index
+    const products = {
+        "sleepwell-classic": {
+            title: "Sleepwell Classic Mattress",
+            category: "Mattress",
+            price: "",
+            image: "img/sleepwell.jpg",
+            description: "Premium comfort mattress with high-quality foam and durable support.",
+            features: ["High-quality foam", "Comfortable sleep", "Available in all sizes", "Premium Finish"],
+            whatsapp: "https://wa.me/919038788320?text=Hello,%20I%20want%20to%20order%20Sleepwell%20Classic."
+        },
+        "sleepwell-durafirm-classic": {
+            title: "Sleepwell Durafirm Classic, 125 mm (5 in)",
+            category: "Mattress",
+            price: "",
+            image: "img/sleepwell-2.jpg",
+            description: "Firm support mattress tailored for maximum spine support.",
+            features: ["125mm Thickness", "Firm Support", "High Density Foam", "Durable"],
+            whatsapp: "https://wa.me/919038788320?text=Hello,%20I%20want%20to%20order%20Sleepwell%20Durafirm."
+        },
+        "curtain-1": {
+            title: "Premium Curtain-1",
+            category: "Curtains",
+            price: "₹9,999.00",
+            image: "img/curtain-1.jpg",
+            description: "Premium quality curtains available in multiple designs and sizes.",
+            features: ["Premium Fabric", "Elegant Design", "Multiple Sizes", "Modern Look"],
+            whatsapp: "https://wa.me/919038788320?text=Hello,%20I%20want%20to%20order%20Curtain-1."
+        },
+        "curtain-2": {
+            title: "Premium Curtain-2",
+            category: "Curtains",
+            price: "₹499.00",
+            image: "img/curtain-2.jpg",
+            description: "Elegant premium curtains available in multiple colors and sizes.",
+            features: ["Multiple Colors", "Soft Fabric", "Room Darkening", "Easy to wash"],
+            whatsapp: "https://wa.me/919038788320?text=Hello,%20I%20want%20to%20order%20Curtain-2."
+        },
+        "ethos-1": {
+            title: "Ethos Nu Home  Fig Fresh Green",
+            category: "Bedsheet",
+            price: "",
+            image: "img/ethos-1.jpg",
+            description: "Premium cotton bedsheet with floral digital print.",
+            features: ["100% Cotton", "Queen Size", "Digital Print", "Soft Fabric"],
+            whatsapp: "https://wa.me/919038788320?text=Hello,%20I%20want%20to%20order%20Ethos%20Nu%20Home%20Fig%20Fresh%20Green."
+        },
+        "ethos-2": {
+            title: "Ethos Nu Home Flora Rose Beige",
+            category: "Bedsheet",
+            price: "",
+            image: "img/ethos-2.jpg",
+            description: "Premium cotton bedsheet with abstract digital print.",
+            features: ["100% Cotton", "Queen Size", "Digital Print", "Soft Fabric"],
+            whatsapp: "https://wa.me/919038788320?text=Hello,%20I%20want%20to%20order%20Ethos%20Nu%20Home%20Flora%20Rose%20Beige."
+        },
+        "ethos-3": {
+            title: "Ethos Nu Home Jaypore Guilded Gold",
+            category: "Bedsheet",
+            price: "",
+            image: "img/ethos-3.png",
+            description: "Premium cotton bedsheet with abstract digital print.",
+            features: ["100% Cotton", "Queen Size", "Digital Print", "Soft Fabric"],
+            whatsapp: "https://wa.me/919038788320?text=Hello,%20I%20want%20to%20order%20Ethos%20Nu%20Home%20Jaypore%20Guilded%20Gold."
+        },
+        "tranquille": {
+            title: "Sleepwell Tranquille",
+            category: "Bedsheet",
+            price: "",
+            image: "img/tranquille.png",
+            description: "Premium cotton bedsheet with abstract digital print.",
+            features: ["100% Cotton", "King Size", "Digital Print", "Soft Fabric"],
+            whatsapp: "https://wa.me/919038788320?text=Hello,%20I%20want%20to%20order%20Sleepwell%20Tranquille."
+        },
+        "tranquille-1": {
+            title: "Sleepwell Tranquille",
+            category: "Bedsheet",
+            price: "",
+            image: "img/tranquille-1.png",
+            description: "Premium cotton bedsheet with abstract digital print.",
+            features: ["100% Cotton", "King Size", "Digital Print", "Soft Fabric"],
+            whatsapp: "https://wa.me/919038788320?text=Hello,%20I%20want%20to%20order%20Sleepwell%20Tranquille."
+        }
+    };
+
+    const product = products[productId];
+
+    if(product){
+        // Load Main Details
+        document.getElementById("product-title").innerText = product.title;
+        document.getElementById("product-category").innerText = product.category;
+        document.getElementById("product-price").innerText = product.price;
+        document.getElementById("main-image").src = product.image;
+        document.getElementById("product-desc").innerText = product.description;
+
+        // Load Features with checkmark styling
+        let featureHTML = "";
+        product.features.forEach(feature => {
+            featureHTML += `<li class="mb-2"><i class="fa fa-check text-success me-2"></i>${feature}</li>`;
+        });
+        document.getElementById("product-features").innerHTML = featureHTML;
+        document.getElementById("whatsapp-btn").href = product.whatsapp;
+
+        // SUGGESTIONS LOGIC formatted exactly like index.html cards
+        const suggestionsContainer = document.getElementById("suggestions-container");
+        const suggestionsSection = document.getElementById("suggestions-section");
+        let hasSuggestions = false;
+
+        for (const key in products) {
+            if (products[key].category === product.category && key !== productId) {
+                hasSuggestions = true;
+                const item = products[key];
+                
+                suggestionsContainer.innerHTML += `
+                    <div class="col-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="rounded position-relative fruite-item product-card" style="cursor:pointer;" onclick="window.location.href='product-detail.html?id=${key}'">
+                            <div class="fruite-img">
+                                <img src="${item.image}" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="text-white bg-secondary px-1 px-md-2 py-1 rounded position-absolute small fw-semibold shadow-sm" style="top: 8px; left: 8px;">
+                                ${item.category}
+                            </div>
+                            <div class="p-2 border border-secondary border-top-0 rounded-bottom">
+                                <h4 class="mb-1 fw-semibold" style="font-size: 16px;">
+                                    ${item.title}
+                                </h4>
+                                <div class="d-flex justify-content-between align-items-center gap-1 px-0 mt-3">
+                                    <p class="text-dark fs-6 fs-sm-5 fw-bold mb-0 ms-0">${item.price}</p>
+                                    <a href="${item.whatsapp}" target="_blank" onclick="event.stopPropagation();" class="btn border border-secondary rounded-pill px-2 px-sm-3 py-1 text-primary small d-flex align-items-center gap-1 flex-nowrap">
+                                        <i class="fab fa-whatsapp"></i> <span>Order</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+        if (hasSuggestions) {
+            suggestionsSection.style.display = "block";
+        }
+    } else {
+        document.getElementById("product-title").innerText = "Product not found.";
+    }
+    </script>
+
+</body>
+</html>
